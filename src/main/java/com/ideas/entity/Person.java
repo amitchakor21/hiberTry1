@@ -29,6 +29,13 @@ public class Person {
         System.out.println("Inside Person Constructor");
     }
 
+    public Person(String firstName,String lastName,String email){
+        this.firstName=firstName;
+        this.email=email;
+        this.lastName=lastName;
+        System.out.println("Inside Person Constructor");
+    }
+
     public int getId() {
         return id;
     }
