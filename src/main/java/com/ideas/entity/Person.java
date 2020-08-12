@@ -25,7 +25,7 @@ public class Person {
     @Column(name = "email")
     private String email="amit@s.com";
 
-    Person(){
+    public Person(){
         System.out.println("Inside Person Constructor");
     }
 
@@ -59,5 +59,11 @@ public class Person {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Person Details?= Id: " + this.id + ", Name: " + this.firstName + " " + this.lastName + ", Email: " + this.email;
     }
 }
